@@ -14,17 +14,17 @@ const SettingOrderPage = () => {
 
 const SECTIONS: SectionProps[] = [
   {
-    title: 'setting_payment_information',
+    title: 'setting_order_information',
     fields: [
       {
-        name: 'trans_no_format',
-        label: 'setting_payment_trans_no_format',
+        name: 'running_format',
+        label: 'setting_order_running_format',
         type: DetailItemType.string,
         required: true,
       },
       {
         name: 'account_no',
-        label: 'setting_payment_account_no',
+        label: 'setting_order_account_no',
         type: DetailItemType.string,
         required: true,
       }
