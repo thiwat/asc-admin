@@ -1,0 +1,16 @@
+.footer {
+  color: #5F5F5F;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.highlight {
+  color: #000000;
+  font-weight: 500;
+}
+
+.version {
+  margin-top: 5px;
+  font-size: 10px;
+}

@@ -1,0 +1,27 @@
+.container {
+  height: 35px;
+  width: 35px;
+  border-radius: 35px;
+  background-color: #F8F8F8;
+  margin-right: 10px; 
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 18px;
+  color: #CFCFCF;
+}
+
+.badge {
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  background-color: #FF6347;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

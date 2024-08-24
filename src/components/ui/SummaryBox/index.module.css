@@ -1,0 +1,26 @@
+.container {
+  padding: 15px 20px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.valueContainer {}
+
+.badge {
+  height: 45px;
+  width: 45px;
+  border-radius: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+
+.value {
+  line-height: 0 !important;
+}

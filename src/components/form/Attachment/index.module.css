@@ -1,0 +1,48 @@
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.img {
+  width: 100%;
+  max-height: 102px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 0;
+}
+
+.overlay:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.uploadText {
+  margin-top: 8px;
+}
+
+.previewImg {
+  width: 100%;
+}
+
+.delIcon {
+  padding: 6px;
+  color: red;
+}
+
+.editIcon {
+  color: white;
+}

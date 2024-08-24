@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.item {
+  padding: 5px 10px;
+  border: 1px solid #efefef;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.active {
+  border-color: var(--primary-color);
+}

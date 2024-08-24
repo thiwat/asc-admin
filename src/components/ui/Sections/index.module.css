@@ -1,0 +1,15 @@
+.container {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 20px;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+.plainContainer {
+  margin-top: 20px;
+}

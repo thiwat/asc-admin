@@ -1,0 +1,18 @@
+.container {
+  padding: 15px 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.dateSearch {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}

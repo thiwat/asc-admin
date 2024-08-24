@@ -1,0 +1,9 @@
+.content {
+  padding: 10px 15px;
+  height: calc(100vh - 50px);
+  overflow: auto;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}

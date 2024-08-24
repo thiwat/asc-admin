@@ -1,0 +1,18 @@
+.container {
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #efefef;
+  border-right: 4px solid #ffffff;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #fbfbfb;
+  border-right-color: var(--primary-color);
+}
+
+.icon {
+  margin-right: 10px;
+}

@@ -1,0 +1,11 @@
+version: "3.0"
+services:
+  asc-admin:
+    build:
+      context: .
+    image: asc-admin
+    container_name: asc-admin
+    restart: always
+    env_file: .env
+    ports:
+      - 4000:3000"

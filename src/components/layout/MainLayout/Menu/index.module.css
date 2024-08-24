@@ -1,0 +1,9 @@
+.container {
+  max-height: calc(100vh - 97px);
+  height: 100%;
+  overflow: auto;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}

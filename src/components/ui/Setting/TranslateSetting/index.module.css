@@ -1,0 +1,18 @@
+.container {
+  background-color: white;
+  padding: 10px;
+  height: calc(100% - 65px);
+  display: flex;
+  flex-direction: row;
+}
+
+.languageContainer {
+  width: 250px;
+  border: 1px solid #efefef;
+  height: 100%;
+}
+
+.tabContainer {
+  flex: 1;
+  padding: 0px 10px;
+}
