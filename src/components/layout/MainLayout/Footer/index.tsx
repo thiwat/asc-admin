@@ -5,7 +5,7 @@ const Footer = () => {
     <div className={styles.footer}>
       {'Powered by '}
       <span className={styles.highlight}>
-        {'Zolve Expert'}
+        {'Anonymous'}
       </span>
       <div className={styles.version}>
         {'Version 1.0.0'}

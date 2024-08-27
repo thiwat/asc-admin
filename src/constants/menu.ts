@@ -67,6 +67,10 @@ export const MENU: MenuItem[] = [
         key: '/settings/attachment'
       },
       {
+        label: 'menu_settings_integration',
+        key: '/settings/integration'
+      },
+      {
         label: 'menu_settings_site',
         key: '/settings/site'
       },

@@ -23,12 +23,6 @@ const CustomerPage = () => {
 const COLUMNS: ListItemProps[] = [
   {
     type: ListItemType.string,
-    title: 'user_email',
-    dataIndex: 'email',
-    key: 'email'
-  },
-  {
-    type: ListItemType.string,
     title: 'user_full_name',
     dataIndex: 'full_name',
     key: 'full_name'
@@ -42,20 +36,6 @@ const COLUMNS: ListItemProps[] = [
       mapColors: USER_STATE_COLORS,
       prefixTranslate: 'user_state_'
     }
-  },
-  {
-    type: ListItemType.string,
-    title: 'user_package',
-    dataIndex: 'package_name',
-    key: 'package_name',
-    sorter: false
-  },
-  {
-    type: ListItemType.string,
-    title: 'user_lawyers',
-    dataIndex: 'lawyers_name',
-    key: 'lawyers_name',
-    sorter: false
   },
   {
     type: ListItemType.date,

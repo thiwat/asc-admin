@@ -1,8 +1,7 @@
 import useBreadcrumb from '@/hooks/useBreadcrumb'
 import { Layout, Typography } from 'antd'
-import Profile from '../Profile'
 import styles from './index.module.css'
-import Notification from '../Notification'
+import Profile from '../Profile'
 
 const Header = () => {
 
@@ -14,7 +13,6 @@ const Header = () => {
         {activeItem}
       </Typography.Text>
       <span className={styles.rightContainer}>
-        <Notification />
         <Profile />
       </span>
     </Layout.Header>
