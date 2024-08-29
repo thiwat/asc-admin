@@ -103,12 +103,6 @@ const SECTIONS: SectionProps[] = [
           ]
         },
       },
-      {
-        label: 'application_use_recaptcha',
-        name: 'use_recaptcha',
-        type: DetailItemType.boolean,
-        required: true
-      },
     ]
   }
 ]

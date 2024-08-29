@@ -7,7 +7,7 @@ export const USER_STATE_COLORS = {
   suspended: 'error'
 }
 
-export const PAYMENT_STATUS_COLORS = {
+export const ORDER_STATUS_COLORS = {
   paid: 'warning',
   completed: 'success',
   cancelled: 'error'

@@ -105,7 +105,12 @@ const FormItemByType = ({
     if (type === DetailItemType.datetime) {
       return (
         <FormItem {...props}>
-          <DatePicker disabled={disabled} style={{ width: '100%' }} format={options?.format || 'DD MMM YY HH:mm:ss'} />
+          <DatePicker
+            disabled={disabled}
+            style={{ width: '100%' }}
+            format={options?.format || 'DD MMM YY HH:mm:ss'}
+            showTime
+          />
         </FormItem>
       )
     }

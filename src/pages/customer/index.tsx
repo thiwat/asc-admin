@@ -22,6 +22,13 @@ const CustomerPage = () => {
 
 const COLUMNS: ListItemProps[] = [
   {
+    type: ListItemType.image,
+    title: '',
+    dataIndex: 'profile_image.url',
+    key: 'profile_image.url',
+    sorter: false
+  },
+  {
     type: ListItemType.string,
     title: 'user_full_name',
     dataIndex: 'full_name',
@@ -39,7 +46,7 @@ const COLUMNS: ListItemProps[] = [
   },
   {
     type: ListItemType.date,
-    title: 'user_last_logged_in_date',
+    title: 'user_last_logged_in',
     dataIndex: 'last_logged_in_at',
     key: 'last_logged_in_at'
   },

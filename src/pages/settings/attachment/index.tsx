@@ -146,25 +146,6 @@ const SECTIONS: SectionProps[] = [
         dependenciesFields: ['aws_s3.authen_type', 'default_provider'],
       },
     ]
-  },
-  {
-    title: 'setting_attachment_google_drive',
-    fields: [
-      {
-        name: ['google_drive', 'credentials'],
-        label: 'setting_attachment_google_drive_credentials',
-        type: DetailItemType.json,
-        dependenciesFields: ['default_provider'],
-        required: ({ values }) => _get(values, 'default_provider') === AttachmentProvider.google_drive,
-      },
-      {
-        name: ['google_drive', 'path'],
-        label: 'setting_attachment_google_drive_path',
-        type: DetailItemType.string,
-        dependenciesFields: ['default_provider'],
-        required: ({ values }) => _get(values, 'default_provider') === AttachmentProvider.google_drive,
-      }
-    ]
   }
 ]
 

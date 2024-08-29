@@ -1,3 +1,3 @@
 export type ApprovePaymentProps = {
-  trans_no: string
+  order_no: string
 }

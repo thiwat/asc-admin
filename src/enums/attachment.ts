@@ -1,6 +1,4 @@
 export enum AttachmentProvider {
-  local = 'local',
-  google_drive = 'google_drive',
   aws_s3 = 'aws_s3'
 }
 
@@ -8,9 +6,6 @@ export enum AttachmentFileExtension {
   png = 'png',
   jpg = 'jpg',
   jpeg = 'jpeg',
-  pdf = 'pdf',
-  doc = 'doc',
-  docx = 'docx'
 }
 
 export enum AttachmentAwsS3AuthenType {

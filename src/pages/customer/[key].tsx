@@ -38,15 +38,8 @@ const SECTIONS: SectionProps[] = [
         disabled: ({ mode }) => mode === ActionMode.update
       },
       {
-        label: 'user_email',
-        name: 'email',
-        type: DetailItemType.string,
-        required: true,
-        disabled: ({ mode }) => mode === ActionMode.update
-      },
-      {
-        label: 'user_mobile_no',
-        name: 'mobile_no',
+        label: 'user_line_id',
+        name: ['social', 'line'],
         type: DetailItemType.string,
         required: true,
         disabled: ({ mode }) => mode === ActionMode.update
@@ -63,43 +56,23 @@ const SECTIONS: SectionProps[] = [
     title: 'user_general_information',
     fields: [
       {
-        label: 'user_first_name',
-        name: 'first_name',
+        label: 'user_full_name',
+        name: 'full_name',
         type: DetailItemType.string,
         required: true,
         disabled: ({ mode }) => mode === ActionMode.update
       },
       {
-        label: 'user_last_name',
-        name: 'last_name',
-        type: DetailItemType.string,
+        label: 'user_profile_image',
+        name: ['profile_image', 'url'],
+        type: DetailItemType.attachment,
         required: true,
-        disabled: ({ mode }) => mode === ActionMode.update
-      },
-      {
-        label: 'user_citizen_number',
-        name: 'citizen_number',
-        type: DetailItemType.string,
-        required: true,
-        disabled: ({ mode }) => mode === ActionMode.update
-      },
-      {
-        label: 'user_date_of_birth',
-        name: 'date_of_birth',
-        type: DetailItemType.datetime,
-        required: true,
+        disabled: ({ mode }) => mode === ActionMode.update,
         options: {
-          format: 'DD MMM YYYY'
-        },
-        disabled: ({ mode }) => mode === ActionMode.update
-      },
-      {
-        label: 'user_package',
-        name: 'package_name',
-        type: DetailItemType.string,
-        required: true,
-        disabled: ({ mode }) => mode === ActionMode.update
-      },
+          accept: 'image/*'
+        }
+      }
+
     ]
   }
 ]

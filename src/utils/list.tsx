@@ -40,6 +40,7 @@ export const prepareListColumns = (
 
   for (const col of cols) {
     col.title = t(col.title)
+    col.dataIndex = col.dataIndex?.includes('.') ? col.dataIndex.split('.') : col.dataIndex
     col.render = _renderByType(col.type, col.options)
     col.align = _getAlign(col.type)
     col.sorter = col.sorter ?? true
@@ -117,7 +118,7 @@ const _renderImage = (value: any) => {
     ? value.image_data || value
     : '/images/default-file.png'
 
-  return <img style={{ height: 50, width: 50 }} src={src} />
+  return <img style={{ height: 50, width: 50, objectFit: 'contain' }} src={src} />
 }
 
 const _renderDrag = () => {

@@ -27,6 +27,18 @@ export const MENU: MenuItem[] = [
     roles: [Roles.admin]
   },
   {
+    label: 'menu_events',
+    key: '/event',
+    icon: 'CalendarOutlined',
+    roles: [Roles.admin]
+  },
+  {
+    label: 'menu_orders',
+    key: '/order',
+    icon: 'SolutionOutlined',
+    roles: [Roles.admin]
+  },
+  {
     label: 'menu_contents',
     key: '/content',
     icon: 'GroupOutlined',
@@ -73,10 +85,6 @@ export const MENU: MenuItem[] = [
       {
         label: 'menu_settings_site',
         key: '/settings/site'
-      },
-      {
-        label: 'menu_settings_gateway',
-        key: '/settings/gateway'
       },
       {
         label: 'menu_settings_order',
