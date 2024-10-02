@@ -1,10 +1,7 @@
 import Detail from "@/components/ui/Detail"
-import { BlogSortBy, CmsBlockButtonType, CmsBlockType } from "@/enums/cms"
 import { DetailItemType } from "@/enums/detail"
 import { Entity } from "@/enums/entity"
-import { ListItemType } from "@/enums/list"
 import { SectionProps } from "@/types/detail"
-import { t } from "@/utils/translate"
 import { useParams } from "next/navigation"
 
 const EventDetail = () => {

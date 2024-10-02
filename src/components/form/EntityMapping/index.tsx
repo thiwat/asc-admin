@@ -50,8 +50,8 @@ const EntityMapping = ({
               value={value}
               options={{
                 entity,
-                label: entity === Entity.master_data_product ? '${ label }' : '${ name }',
-                value: entity === Entity.master_data_product ? '${ value }' : '${ code }'
+                label: '${ name }',
+                value: '${ code }'
               }}
               onChange={_onChange(row.key)}
             />
