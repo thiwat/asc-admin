@@ -7,8 +7,8 @@ const ColorPicker = ({
   onChange
 }: ColorPickerProps) => {
 
-  const _onChange = (value: unknown, hex: string) => {
-    onChange(hex)
+  const _onChange = (value: any, hex: string, ...props) => {
+    onChange(value.toHexString())
   }
 
   return (

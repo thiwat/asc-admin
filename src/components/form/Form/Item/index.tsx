@@ -21,6 +21,7 @@ import NotificationTemplate from '../../NotificationTemplate'
 import AdvanceTable from '@/components/ui/AdvanceTable'
 import WysiwygEditor from '../../Wysiwyg'
 import Tags from '../../Tags'
+import Table from '@/components/ui/Table'
 
 const FormItemByType = ({
   type,
@@ -110,6 +111,19 @@ const FormItemByType = ({
             style={{ width: '100%' }}
             format={options?.format || 'DD MMM YY HH:mm:ss'}
             showTime
+          />
+        </FormItem>
+      )
+    }
+    if (type === DetailItemType.table) {
+      return (
+        <FormItem {...props}>
+          <Table
+            columns={options.columns}
+            expanable={{
+              key: options.expandRowKey,
+              columns: options.expandRowColumns
+            }}
           />
         </FormItem>
       )

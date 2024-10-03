@@ -15,6 +15,7 @@ export enum DetailItemType {
   attachment = 'attachment',
   addable = 'addable',
   html = 'html',
+  table = 'table',
   tags = 'tags',
   advance_table = 'advance_table',
   notification_template = 'notification_template'

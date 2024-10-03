@@ -4,5 +4,7 @@ export enum Entity {
   cms_page = 'cms_page',
   event = 'event',
   order = 'order',
+  survey = 'survey',
+  survey_answer = 'survey_answer',
   user = 'user',
 }

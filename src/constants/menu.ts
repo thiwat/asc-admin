@@ -56,6 +56,14 @@ export const MENU: MenuItem[] = [
         label: 'menu_notification_template',
         key: '/content/notification_template',
       },
+      {
+        label: 'menu_survey',
+        key: '/content/survey',
+      },
+      {
+        label: 'menu_survey_answer',
+        key: '/content/survey_answer',
+      },
     ]
   },
   {
