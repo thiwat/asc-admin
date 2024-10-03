@@ -137,6 +137,7 @@ const SECTIONS: SectionProps[] = [
                       { label: 'survey_question_type_string', value: 'string' },
                       { label: 'survey_question_type_textarea', value: 'textarea' },
                       { label: 'survey_question_type_radio', value: 'radio' },
+                      { label: 'survey_question_type_image', value: 'image' },
                     ]
                   }
                 },
