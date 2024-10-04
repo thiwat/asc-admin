@@ -23,8 +23,14 @@ const SECTIONS: SectionProps[] = [
         required: true
       },
       {
-        name: ['line', 'liff_id'],
-        label: 'setting_line_liff_id',
+        name: ['line', 'liff_id_tickets'],
+        label: 'setting_line_liff_id_tickets',
+        type: DetailItemType.string,
+        required: true
+      },
+      {
+        name: ['line', 'liff_id_register'],
+        label: 'setting_line_liff_id_register',
         type: DetailItemType.string,
         required: true
       },
