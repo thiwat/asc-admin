@@ -17,7 +17,7 @@ const OrderDetail = () => {
       entity={Entity.order}
       sections={SECTIONS}
       keyData={params.key as string}
-      actions={{ delete: false, update: false }}
+      actions={{ delete: false }}
       badge={{
         fieldName: 'status',
         mapColors: ORDER_STATUS_COLORS,
@@ -75,7 +75,7 @@ const SECTIONS: SectionProps[] = [
         name: 'slip_url',
         type: DetailItemType.attachment,
         required: true,
-        disabled: true,
+        disabled: false,
         options: {
           accept: '*'
         }
