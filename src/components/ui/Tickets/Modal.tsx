@@ -34,7 +34,6 @@ const TicketModal = ({
       <Button icon={<FileTextOutlined />} onClick={onToggleOpen} />
       <Modal
         open={open}
-        onClose={onToggleOpen}
         onCancel={onToggleOpen}
         footer={false}
         centered
