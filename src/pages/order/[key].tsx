@@ -1,7 +1,7 @@
 import { requestApprovePayment } from "@/apis/client/payment"
 import Detail from "@/components/ui/Detail"
 import { ORDER_STATUS_COLORS } from "@/constants/colors"
-import { ActionMode, DetailItemType } from "@/enums/detail"
+import { DetailItemType } from "@/enums/detail"
 import { Entity } from "@/enums/entity"
 import { SectionProps } from "@/types/detail"
 import { t } from "@/utils/translate"
@@ -17,7 +17,7 @@ const OrderDetail = () => {
       entity={Entity.order}
       sections={SECTIONS}
       keyData={params.key as string}
-      actions={{ delete: false }}
+      actions={{ delete: false, update: false }}
       badge={{
         fieldName: 'status',
         mapColors: ORDER_STATUS_COLORS,
@@ -43,15 +43,15 @@ const SECTIONS: SectionProps[] = [
     title: 'order_general_information',
     fields: [
       {
-        label: 'order_order_no',
-        name: 'order_no',
+        label: 'order_user_email',
+        name: ['user', 'email'],
         type: DetailItemType.string,
         required: true,
         disabled: true
       },
       {
-        label: 'order_user_name',
-        name: 'user_name',
+        label: 'order_user_mobile_no',
+        name: ['user', 'mobile_no'],
         type: DetailItemType.string,
         required: true,
         disabled: true
@@ -63,13 +63,7 @@ const SECTIONS: SectionProps[] = [
         required: true,
         disabled: true
       },
-      {
-        label: 'order_quantity',
-        name: 'quantity',
-        type: DetailItemType.number,
-        required: true,
-        disabled: true
-      },
+      { type: DetailItemType.space },
       {
         label: 'order_slip_url',
         name: 'slip_url',
@@ -82,6 +76,26 @@ const SECTIONS: SectionProps[] = [
       },
     ]
   },
+  {
+    title: 'order_player_information',
+    fields: [
+      {
+        name: ['items', 'players'],
+        type: DetailItemType.players,
+        span: 24
+      }
+    ]
+  },
+  {
+    title: 'order_tickets_information',
+    fields: [
+      {
+        name: 'order_no',
+        type: DetailItemType.tickets,
+        span: 24
+      }
+    ]
+  }
 ]
 
 export default OrderDetail

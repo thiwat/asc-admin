@@ -10,6 +10,7 @@ const OrderPage = () => {
       entity={Entity.order}
       columns={COLUMNS}
       rowKey={'order_no'}
+      hideCreate
     />
   )
 }
@@ -23,15 +24,24 @@ const COLUMNS: ListItemProps[] = [
   },
   {
     type: ListItemType.string,
-    title: 'order_user_name',
-    dataIndex: 'user_name',
-    key: 'user_name'
+    title: 'order_user_email',
+    dataIndex: 'user.email',
+    key: 'user.email'
+  },
+  {
+    type: ListItemType.string,
+    title: 'order_user_mobile_no',
+    dataIndex: 'user.mobile_no',
+    key: 'user.mobile_no'
   },
   {
     type: ListItemType.number,
     title: 'order_total_amount',
     dataIndex: 'total_amount',
-    key: 'total_amount'
+    key: 'total_amount',
+    options: {
+      format: 'currency'
+    }
   },
   {
     type: ListItemType.badge,

@@ -22,6 +22,8 @@ import AdvanceTable from '@/components/ui/AdvanceTable'
 import WysiwygEditor from '../../Wysiwyg'
 import Tags from '../../Tags'
 import Table from '@/components/ui/Table'
+import Players from '@/components/ui/Players'
+import Tickets from '@/components/ui/Tickets'
 
 const FormItemByType = ({
   type,
@@ -175,6 +177,20 @@ const FormItemByType = ({
             disabled={disabled}
             accept={options.accept}
           />
+        </FormItem>
+      )
+    }
+    if (type == DetailItemType.players) {
+      return (
+        <FormItem {...props}>
+          <Players />
+        </FormItem>
+      )
+    }
+    if (type == DetailItemType.tickets) {
+      return (
+        <FormItem {...props}>
+          <Tickets />
         </FormItem>
       )
     }

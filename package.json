@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@hugocxl/react-to-image": "^0.0.9",
     "ahooks": "^3.7.8",
     "antd": "^5.11.5",
     "chart.js": "^4.4.2",
@@ -26,6 +27,7 @@
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
     "react-drag-listview": "^2.0.0",
+    "react-qr-code": "^2.0.18",
     "recoil": "^0.7.7",
     "typescript": "^5.2.2",
     "universal-cookie": "^6.1.1"

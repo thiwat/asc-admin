@@ -21,56 +21,10 @@ export const MENU: MenuItem[] = [
     icon: 'HomeOutlined'
   },
   {
-    label: 'menu_customers',
-    key: '/customer',
-    icon: 'UserOutlined',
-    roles: [Roles.admin]
-  },
-  {
-    label: 'menu_events',
-    key: '/event',
-    icon: 'CalendarOutlined',
-    roles: [Roles.admin]
-  },
-  {
     label: 'menu_orders',
     key: '/order',
     icon: 'SolutionOutlined',
     roles: [Roles.admin]
-  },
-  {
-    label: 'menu_contents',
-    key: '/content',
-    icon: 'GroupOutlined',
-    roles: [Roles.admin],
-    children: [
-      {
-        label: 'menu_cms_block',
-        key: '/content/cms_block'
-      },
-      {
-        label: 'menu_cms_page',
-        key: '/content/cms_page',
-      },
-      {
-        label: 'menu_notification_template',
-        key: '/content/notification_template',
-      },
-      {
-        label: 'menu_survey',
-        key: '/content/survey',
-      },
-      {
-        label: 'menu_survey_answer',
-        key: '/content/survey_answer',
-      },
-    ]
-  },
-  {
-    label: 'menu_staffs',
-    key: '/staff',
-    icon: 'TeamOutlined',
-    roles: [Roles.admin],
   },
   {
     label: 'menu_settings',
@@ -87,21 +41,9 @@ export const MENU: MenuItem[] = [
         key: '/settings/attachment'
       },
       {
-        label: 'menu_settings_integration',
-        key: '/settings/integration'
-      },
-      {
-        label: 'menu_settings_site',
-        key: '/settings/site'
-      },
-      {
         label: 'menu_settings_order',
         key: '/settings/order'
       },
-      {
-        label: 'menu_settings_translates',
-        key: '/settings/translates'
-      }
     ]
   }
 ]

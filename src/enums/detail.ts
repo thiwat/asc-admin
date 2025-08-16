@@ -18,6 +18,8 @@ export enum DetailItemType {
   table = 'table',
   tags = 'tags',
   advance_table = 'advance_table',
+  players = 'players',
+  tickets = 'tickets',
   notification_template = 'notification_template'
 }
 

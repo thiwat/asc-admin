@@ -1,9 +1,7 @@
-import Dashboard from '@/components/ui/Dashboard'
-
 const HomePage = () => {
 
   return (
-    <Dashboard />
+    null
   )
 }
 

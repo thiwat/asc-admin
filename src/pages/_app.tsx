@@ -38,7 +38,7 @@ const MyApp = ({ Component, pageProps }) => {
     }
 
     if (pageProps.translates) {
-      setTranslate(pageProps.translates)
+      // setTranslate(pageProps.translates)
     }
 
     if (pageProps?.token && NOT_REQUIRE_AUTH.includes(router.pathname)) {
