@@ -1,0 +1,4 @@
+.customFont {
+  font-family: var(--font-noto_sans_thai) !important;
+  font-weight: 500;
+}

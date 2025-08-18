@@ -12,8 +12,14 @@ import { requestSiteSetting } from '@/apis/server/system';
 import { settingsAtom } from '@/atoms/settings';
 import { PRIMARY_COLOR } from '@/constants/colors';
 import { requestGetTranslate } from '@/apis/server/setting';
-import { setTranslate } from '@/utils/translate';
+import { Noto_Sans_Thai } from "next/font/google";
 import { COOKIE_OPTIONS } from '@/constants/cookies';
+
+const noto_sans_thai = Noto_Sans_Thai({
+  subsets: ["thai", "latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+
 
 const NOT_REQUIRE_AUTH = ["/login", '/forgot_password'];
 
@@ -69,6 +75,12 @@ const MyApp = ({ Component, pageProps }) => {
         <meta name="description" content={'Meta Description'}></meta>
         <meta name="keywords" content={'Meta Keywords'} />
         <link rel="shortcut icon" href="/images/logo.png" />
+        <style>{`
+          :root {
+            --font-noto_sans_thai: ${noto_sans_thai.style.fontFamily}
+          }
+        `}
+        </style>
       </Head>
       <RecoilRoot initializeState={_setInitialState(pageProps)}>
         <ConfigProvider

@@ -5,7 +5,8 @@ import { useState } from "react"
 import Image from "next/image"
 import QRCode from "react-qr-code"
 import { useToPng } from "@hugocxl/react-to-image"
-import { t } from "@/utils/translate"
+import styles from './index.module.css'
+import Icon from "../Icon"
 
 const TicketModal = ({
   data
@@ -19,10 +20,10 @@ const TicketModal = ({
 
   const [state, convert] = useToPng<HTMLDivElement>({
     selector: '#qrcode',
-    onSuccess: data => {
+    onSuccess: res => {
       const link = document.createElement('a');
-      link.href = data; // Assumes base64Image includes the data URI prefix
-      link.download = 'qrcode.png';
+      link.href = res; // Assumes base64Image includes the data URI prefix
+      link.download = `${data.code}.png`;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -42,20 +43,30 @@ const TicketModal = ({
           <div style={{ borderRadius: 12, border: '1px solid #efefef', background: 'white' }} id={'qrcode'}>
             <Image
               src={'/images/header.jpeg'}
-              width={300}
-              height={120}
+              width={400}
+              height={180}
               alt={'banner'}
               style={{ objectFit: 'cover', borderTopRightRadius: 12, borderTopLeftRadius: 12 }}
             />
             <div style={{ paddingLeft: 20, paddingRight: 20, paddingBottom: 24, textAlign: 'center' }}>
-              <Typography.Title level={3} style={{ lineHeight: 1, marginBottom: 12, color: '#0059AF' }}>
-                {'Tales of the Sounds'}
-              </Typography.Title>
+              <div style={{ lineHeight: 1, marginBottom: 12, color: '#0059AF', fontSize: 30, fontWeight: '800', marginTop: 16 }} className={styles.customFont}>
+                {'TALES OF THE SOUNDS'}
+              </div>
               <QRCode
                 value={data.code}
                 size={172}
-                style={{ marginTop: 12 }}
+                style={{ marginTop: 12, marginBottom: 12 }}
               />
+              <div style={{ width: 'fit-content', textAlign: 'left', paddingTop: 12, paddingBottom: 12, margin: '0px auto' }}>
+                <div className={styles.customFont} style={{ fontSize: 12, marginBottom: 10, display: 'flex', alignItems: 'center' }}>
+                  <Icon name={'CalendarDots'} size={20} style={{ marginRight: 10 }} />
+                  {'Sunday, 5th October 2025 2:00-3:30 pm.'}
+                </div>
+                <div className={styles.customFont} style={{ fontSize: 12, marginBottom: 10, display: 'flex', alignItems: 'center' }}>
+                  <Icon name={'MapPin'} size={20} style={{ marginRight: 10 }} />
+                  {'Yamaha Music Hall, Siam Patumwan House, 5th fl.'}
+                </div>
+              </div>
             </div>
           </div>
           <div>
