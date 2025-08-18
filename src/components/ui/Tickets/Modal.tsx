@@ -6,7 +6,7 @@ import Image from "next/image"
 import QRCode from "react-qr-code"
 import { useToPng } from "@hugocxl/react-to-image"
 import styles from './index.module.css'
-import Icon from "../Icon"
+import { CalendarOutlined, CompassOutlined } from '@ant-design/icons'
 
 const TicketModal = ({
   data
@@ -59,11 +59,11 @@ const TicketModal = ({
               />
               <div style={{ width: 'fit-content', textAlign: 'left', paddingTop: 12, paddingBottom: 12, margin: '0px auto' }}>
                 <div className={styles.customFont} style={{ fontSize: 12, marginBottom: 10, display: 'flex', alignItems: 'center' }}>
-                  <Icon name={'CalendarDots'} size={20} style={{ marginRight: 10 }} />
+                  <CalendarOutlined width={32} height={32} style={{ marginRight: 10, fontSize: 18 }} />
                   {'Sunday, 5th October 2025 2:00-3:30 pm.'}
                 </div>
                 <div className={styles.customFont} style={{ fontSize: 12, marginBottom: 10, display: 'flex', alignItems: 'center' }}>
-                  <Icon name={'MapPin'} size={20} style={{ marginRight: 10 }} />
+                  <CompassOutlined size={20} style={{ marginRight: 10, fontSize: 18 }} />
                   {'Yamaha Music Hall, Siam Patumwan House, 5th fl.'}
                 </div>
               </div>

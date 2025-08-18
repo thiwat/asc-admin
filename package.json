@@ -13,7 +13,6 @@
   "license": "ISC",
   "dependencies": {
     "@hugocxl/react-to-image": "0.0.9",
-    "@phosphor-icons/react": "^2.1.10",
     "ahooks": "3.7.8",
     "antd": "5.11.5",
     "chart.js": "4.4.2",
