@@ -60,7 +60,7 @@ const TicketModal = ({
               <div style={{ width: 'fit-content', textAlign: 'left', paddingTop: 12, paddingBottom: 12, margin: '0px auto' }}>
                 <div className={styles.customFont} style={{ fontSize: 12, marginBottom: 10, display: 'flex', alignItems: 'center' }}>
                   <CalendarOutlined width={32} height={32} style={{ marginRight: 10, fontSize: 18 }} />
-                  {'Sunday, 5th October 2025 2:00-3:30 pm.'}
+                  {'Sunday October 5th, 2025, 2:00-3:30 pm.'}
                 </div>
                 <div className={styles.customFont} style={{ fontSize: 12, marginBottom: 10, display: 'flex', alignItems: 'center' }}>
                   <CompassOutlined size={20} style={{ marginRight: 10, fontSize: 18 }} />
