@@ -37,6 +37,7 @@ const TicketModal = ({
         open={open}
         onCancel={onToggleOpen}
         footer={false}
+        destroyOnClose
         centered
       >
         <div style={{ marginTop: 20, display: 'flex', width: '100%', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
