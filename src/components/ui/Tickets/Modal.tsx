@@ -45,13 +45,13 @@ const TicketModal = ({
             <Image
               src={'/images/header.jpeg'}
               width={400}
-              height={180}
+              height={225}
               alt={'banner'}
               style={{ objectFit: 'cover', borderTopRightRadius: 12, borderTopLeftRadius: 12 }}
             />
             <div style={{ paddingLeft: 20, paddingRight: 20, paddingBottom: 24, textAlign: 'center' }}>
-              <div style={{ lineHeight: 1, marginBottom: 12, color: '#0059AF', fontSize: 30, fontWeight: '800', marginTop: 16 }} className={styles.customFont}>
-                {'TALES OF THE SOUNDS'}
+              <div style={{ lineHeight: 1, marginBottom: 12, color: '#000000', fontSize: 30, fontWeight: '800', marginTop: 16 }} className={styles.customFont}>
+                {'Quiet Triumph'}
               </div>
               <QRCode
                 value={data.code}
@@ -61,7 +61,7 @@ const TicketModal = ({
               <div style={{ width: 'fit-content', textAlign: 'left', paddingTop: 12, paddingBottom: 12, margin: '0px auto' }}>
                 <div className={styles.customFont} style={{ fontSize: 12, marginBottom: 10, display: 'flex', alignItems: 'center' }}>
                   <CalendarOutlined width={32} height={32} style={{ marginRight: 10, fontSize: 18 }} />
-                  {'Sunday October 5th, 2025, 2:00-3:30 pm.'}
+                  {'Sunday September 27th, 2026, 2:00-3:30pm.'}
                 </div>
                 <div className={styles.customFont} style={{ fontSize: 12, marginBottom: 10, display: 'flex', alignItems: 'center' }}>
                   <CompassOutlined size={20} style={{ marginRight: 10, fontSize: 18 }} />
